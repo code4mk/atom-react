@@ -21,8 +21,8 @@
     "body": """
     basename="/admin"
     """
-  "basename->React-Router-Dom":
-    "prefix": "rr-basename"
+  "history->React-Router-Dom":
+    "prefix": "rr-history"
     "body": """
     history={history}
     """
