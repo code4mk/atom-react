@@ -9,69 +9,135 @@
     "prefix": "rr-import"
     "body": """
     import {$1} from 'react-router-dom'
+    import history from 'history/createBrowserHistory'
     """
-  "link->React-Router-Dom":
+  "history dom ->React-Router-Dom":
+    "prefix": "rr-import-history"
+    "body": """
+    import history from 'history/createBrowserHistory'
+    """
+  "basename->React-Router-Dom":
+    "prefix": "rr-basename"
+    "body": """
+    basename="/admin"
+    """
+  "basename->React-Router-Dom":
+    "prefix": "rr-basename"
+    "body": """
+    history={history}
+    """
+  "link (i)->React-Router-Dom":
     "prefix": "rri-link "
     "body": """
     Link
     """
-  "BrowserRouter->React-Router-Dom":
+  "BrowserRouter (i)->React-Router-Dom":
     "prefix": "rri-BrowserRouter "
     "body": """
     BrowserRouter
     """
-  "HashRouter->React-Router-Dom":
+  "HashRouter (i)->React-Router-Dom":
     "prefix": "rri-HashRouter"
     "body": """
     HashRouter
     """
-  "navLink->React-Router-Dom":
+  "navLink (i)->React-Router-Dom":
     "prefix": "rri-navLink "
     "body": """
     NavLink
     """
-  "Route import->React-Router-Dom":
+  "Route (i)->React-Router-Dom":
     "prefix": "rri-route "
     "body": """
     Route
     """
-  "withRouter->React-Router-Dom":
+  "withRouter (i)->React-Router-Dom":
     "prefix": "rri-withRouter"
     "body": """
     withRouter
     """
-  "switch->React-Router-Dom":
+  "switch (i)->React-Router-Dom":
     "prefix": "rri-switch"
     "body": """
     Switch
     """
-  "prompt->React-Router-Dom":
+  "prompt (i)->React-Router-Dom":
     "prefix": "rri-prompt"
     "body": """
     Prompt
     """
-  "Redirect->React-Router-Dom":
+  "Redirect (i)->React-Router-Dom":
     "prefix": "rri-Redirect"
     "body": """
     Redirect
     """
-  "StaticRouter->React-Router-Dom":
+  "StaticRouter (i)->React-Router-Dom":
     "prefix": "rri-StaticRouter"
     "body": """
     StaticRouter
     """
-  "MemoryRouter->React-Router-Dom":
+  "MemoryRouter (i)->React-Router-Dom":
     "prefix": "rri-MemoryRouter"
     "body": """
     MemoryRouter
     """
-  "route->React-Router-Dom":
+  "route (el)->React-Router-Dom":
     "prefix": "rr-route"
     "body": """
     <Route path="/me" component={me$1}/>
     """
-  "link to->React-Router-Dom":
+  "link (el)->React-Router-Dom":
     "prefix": "rr-link"
     "body": """
     <Link to="/me$1">Me</Link>
+    """
+  "NavLink  (el)->React-Router-Dom":
+    "prefix": "rr-navlink"
+    "body": """
+    <NavLink to="/me">Me</NavLink>
+    """
+  "Switch  (el)->React-Router-Dom":
+    "prefix": "rr-switch"
+    "body": """
+    <Switch>
+      <Route exact path="/" component={Home}/>
+      <Route path="/about" component={About}/>
+      <Route component={NoMatch}/>
+    </Switch>
+    """
+  "BrowserRouter  (el)->React-Router-Dom":
+    "prefix": "rr-BrowserRouter"
+    "body": """
+    <BrowserRouter>
+      $1
+    </BrowserRouter>
+    """
+  "HashRouter  (el)->React-Router-Dom":
+    "prefix": "rr-HashRouter"
+    "body": """
+    <HashRouter>
+      $1
+    </HashRouter>
+    """
+  "MemoryRouter  (el)->React-Router-Dom":
+    "prefix": "rr-MemoryRouter"
+    "body": """
+    <MemoryRouter>
+      $1
+    </MemoryRouter>
+    """
+  "Prompt  (el)->React-Router-Dom":
+    "prefix": "rr-Prompt"
+    "body": """
+    <Prompt message="Are you sure you want to leave?"/>
+    """
+  "Redirect  (el)->React-Router-Dom":
+    "prefix": "rr-Redirect"
+    "body": """
+    <Redirect to="/dashboard"/>
+    """
+  "Redirect from-to (el)->React-Router-Dom":
+    "prefix": "rr-Redirect2"
+    "body": """
+    <Redirect from='/users/:id' to='/users/profile/:id'/>
     """
