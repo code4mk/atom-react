@@ -1,13 +1,12 @@
 {
   "name": "atom-react",
   "version": "0.1.0",
-  "description": "React Snippet with JSX , Router  >> Snippet >> React by @code4mk",
+  "description": "React.js Snippet   >> React Router >>  by @code4mk",
   "keywords": [
     "react",
-    "react.js",
-    "jsx",
-    "router",
-    "snippet"
+    "router-dom",
+    "snippet",
+    "react.js"
   ],
   "repository": {
     "type": "git",
