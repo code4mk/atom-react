@@ -19,7 +19,7 @@ Mian Features:
 
   | Name  |  snippet |
   |---|---|
-  | jfx| html| rx- |
+  | jfx / html| rx- |
   | react | re- |
   |import element| rei- |
   |router | rr-|
