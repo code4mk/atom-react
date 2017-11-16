@@ -1,0 +1,56 @@
+########################################################
+#            Atom React Snippet                        #
+#                React                                #
+#####################################################
+
+'.source.js':
+
+  "componentWillMount->React":
+    "prefix": "re-componentwillmount"
+    "body": """
+    componentWillMount() {
+      $1
+    }
+    """
+  "componentDidMount->React":
+    "prefix": "re-componentDidMount"
+    "body": """
+    componentDidMount() {
+      $1
+    }
+    """
+  "componentWillReceiveProps->React":
+    "prefix": "re-componentWillReceiveProps"
+    "body": """
+    componentWillReceiveProps(nextProps) {
+      $1
+    }
+    """
+  "shouldComponentUpdate->React":
+    "prefix": "re-shouldComponentUpdate"
+    "body": """
+    shouldComponentUpdate(nextProps, nextState) {
+      $1
+    }
+    """
+  "componentWillUpdate->React":
+    "prefix": "re-componentWillUpdate"
+    "body": """
+    componentWillUpdate(nextProps, nextState) {
+      $1
+    }
+    """
+  "componentDidUpdate->React":
+    "prefix": "re-componentDidUpdate"
+    "body": """
+    componentDidUpdate(prevProps, prevState) {
+      $1
+    }
+    """
+  "componentWillUnmount->React":
+    "prefix": "re-componentWillUnmount"
+    "body": """
+    componentWillUnmount() {
+      $1
+    }
+    """

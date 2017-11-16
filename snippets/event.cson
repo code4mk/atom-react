@@ -1,0 +1,37 @@
+########################################################
+#            Atom React Snippet                        #
+#                React                                #
+#####################################################
+
+'.source.js':
+
+  "onClick+this ->React":
+    "prefix": "re-onclick"
+    "body": """
+      onclick = {this.x$1.bind(this)}
+    """
+  "onClick+es6 ->React":
+    "prefix": "re-onclick2"
+    "body": """
+      onClick={(e) => this.x$1()}
+    """
+  "onClick ->React":
+    "prefix": "re-onclick3"
+    "body": """
+      onClick={ this.x }
+    """
+  "bind inside constructor ->React":
+    "prefix": "re-bind"
+    "body": """
+      this.x = this.x.bind(this)
+    """
+  "bind (this) inline ->React":
+    "prefix": "re-bind2"
+    "body": """
+    bind(this)
+    """
+  "preventDefault ->React":
+    "prefix": "re-preventDefault"
+    "body": """
+    e.preventDefault()
+    """

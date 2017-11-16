@@ -1,0 +1,21 @@
+########################################################
+#            Atom React Snippet                        #
+#                React                                #
+#####################################################
+
+'.source.js':
+
+  "method  ->React":
+    "prefix": "re-method"
+    "body": """
+      meMethod$1() {
+        $2
+      }
+    """
+  "method + es6 ->React":
+    "prefix": "re-method2"
+    "body": """
+      meMethod$1 = (e) => {
+        $2
+      }
+    """

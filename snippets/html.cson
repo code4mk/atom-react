@@ -1,0 +1,195 @@
+########################################################
+#            Atom React Snippet                        #
+#                JFX - html                           #
+#####################################################
+
+'.source.js':
+
+  "class->React jsx":
+    "prefix": "rx-class"
+    "body": """
+    className="$1"
+    """
+  "header->React jsx":
+    "prefix": "rx-header"
+    "body": """
+    <header>
+      $1
+    </header>
+    """
+  "meta->React jsx":
+    "prefix": "rx-meta"
+    "body": """
+    <meta charset="utf-8"/>
+    """
+  "link->React jsx":
+    "prefix": "rx-link"
+    "body": """
+    <link rel="stylesheet" href="$1"/>
+    """
+  "viewport->React jsx":
+    "prefix": "rx-viewport"
+    "body": """
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    """
+  "nav->React jsx":
+    "prefix": "rx-nav"
+    "body": """
+    <nav>
+      $1
+    </nav>
+    """
+  "div->React jsx":
+    "prefix": "rx-div"
+    "body": """
+    <div>
+      $1
+    </div>
+    """
+  "article->React jsx":
+    "prefix": "rx-article"
+    "body": """
+    <article>${1}</article>
+    """
+  "section->React jsx":
+    "prefix": "rx-section"
+    "body": """
+    <section>
+      ${1}
+    </section>
+    """
+  "a->React jsx":
+    "prefix": "rx-a"
+    "body": """
+    <a href="">${1}</a>
+    """
+  "span->React jsx":
+    "prefix": "rx-span"
+    "body": """
+    <span>$1</span>
+    """
+  "p->React jsx":
+    "prefix": "rx-p"
+    "body": """
+    <p>$1</p>
+    """
+  "strong->React jsx":
+    "prefix": "rx-strong"
+    "body": """
+    <strong>$1</strong>
+    """
+  "ul->React jsx":
+    "prefix": "rx-ul"
+    "body": """
+    <ul>
+      $1
+    </ul>
+    """
+  "li->React jsx":
+    "prefix": "rx-li"
+    "body": """
+    <li>$1</li>
+    """
+  "ol->React jsx":
+    "prefix": "rx-ol"
+    "body": """
+    <ol>$1</ol>
+    """
+  "iframe->React jsx":
+    "prefix": "rx-iframe"
+    "body": """
+    <iframe>$1</iframe>
+    """
+  "field->React jsx":
+    "prefix": "rx-field"
+    "body": """
+    <fieldset>
+      <legend></legend>
+    </fieldset>
+    """
+  "main->React jsx":
+    "prefix": "rx-main"
+    "body": """
+    <main>
+      $1
+    </main>
+    """
+  "img->React jsx":
+    "prefix": "rx-img"
+    "body": """
+    <img src="$1" alt="$2" />
+    """
+  "h1->React jsx":
+    "prefix": "rx-h1"
+    "body": """
+    <h1>$1</h1>
+    """
+  "h2->React jsx":
+    "prefix": "rx-h2"
+    "body": """
+    <h2>$1</h2>
+    """
+  "h3->React jsx":
+    "prefix": "rx-h3"
+    "body": """
+    <h3>$1</h3>
+    """
+  "h4->React jsx":
+    "prefix": "rx-h4"
+    "body": """
+    <h4>$1</h4>
+    """
+  "h5->React jsx":
+    "prefix": "rx-h5"
+    "body": """
+    <h5>$1</h5>
+    """
+  "h6->React jsx":
+    "prefix": "rx-h6"
+    "body": """
+    <h6>$1</h6>
+    """
+  "figure->React jsx":
+    "prefix": "rx-figure"
+    "body": """
+    <figure>$1</figure>
+    """
+  "figcaption->React jsx":
+    "prefix": "rx-figcaption"
+    "body": """
+    <figcaption>$1</figcaption>
+    """
+  "form->React jsx":
+    "prefix": "rx-form"
+    "body": """
+    <form>
+      $1
+    </form>
+    """
+  "label->React jsx":
+    "prefix": "rx-label"
+    "body": """
+    <label>$1</label>
+    """
+  "input->React jsx":
+    "prefix": "rx-input"
+    "body": """
+    <input type="$1" name="$2" value="$3" />
+    """
+  "textarea->React jsx":
+    "prefix": "rx-textarea"
+    "body": """
+    <textarea name="$4" cols="$2" rows="$3">${1}</textarea>
+    """
+  "button->React jsx":
+    "prefix": "rx-button"
+    "body": """
+    <button type="button">${1}</button>
+    """
+  "footer->React jsx":
+    "prefix": "rx-footer"
+    "body": """
+    <footer>
+      $1
+    </footer>
+    """

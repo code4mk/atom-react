@@ -1,0 +1,77 @@
+########################################################
+#            Atom React Snippet                        #
+#                Router                               #
+#####################################################
+
+'.source.js':
+
+  "import->React-Router-Dom":
+    "prefix": "rr-import"
+    "body": """
+    import {$1} from 'react-router-dom'
+    """
+  "link->React-Router-Dom":
+    "prefix": "rri-link "
+    "body": """
+    Link
+    """
+  "BrowserRouter->React-Router-Dom":
+    "prefix": "rri-BrowserRouter "
+    "body": """
+    BrowserRouter
+    """
+  "HashRouter->React-Router-Dom":
+    "prefix": "rri-HashRouter"
+    "body": """
+    HashRouter
+    """
+  "navLink->React-Router-Dom":
+    "prefix": "rri-navLink "
+    "body": """
+    NavLink
+    """
+  "Route import->React-Router-Dom":
+    "prefix": "rri-route "
+    "body": """
+    Route
+    """
+  "withRouter->React-Router-Dom":
+    "prefix": "rri-withRouter"
+    "body": """
+    withRouter
+    """
+  "switch->React-Router-Dom":
+    "prefix": "rri-switch"
+    "body": """
+    Switch
+    """
+  "prompt->React-Router-Dom":
+    "prefix": "rri-prompt"
+    "body": """
+    Prompt
+    """
+  "Redirect->React-Router-Dom":
+    "prefix": "rri-Redirect"
+    "body": """
+    Redirect
+    """
+  "StaticRouter->React-Router-Dom":
+    "prefix": "rri-StaticRouter"
+    "body": """
+    StaticRouter
+    """
+  "MemoryRouter->React-Router-Dom":
+    "prefix": "rri-MemoryRouter"
+    "body": """
+    MemoryRouter
+    """
+  "route->React-Router-Dom":
+    "prefix": "rr-route"
+    "body": """
+    <Route path="/me" component={me$1}/>
+    """
+  "link to->React-Router-Dom":
+    "prefix": "rr-link"
+    "body": """
+    <Link to="/me$1">Me</Link>
+    """

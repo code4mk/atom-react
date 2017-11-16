@@ -1,0 +1,76 @@
+########################################################
+#            Atom React Snippet                        #
+#                Router                               #
+#####################################################
+
+'.source.js':
+
+  "if/else inside render->React":
+    "prefix": "re-if"
+    "body": """
+     let myStatus;
+     if ($1) {
+       myStatus = (
+         $2
+       )
+     } else {
+       myStatus = (
+         $2
+       )
+     }
+    """
+  "if/else inside method->React":
+    "prefix": "re-if2"
+    "body": """
+     if ($1) {
+       return (
+         $2
+       );
+     } else {
+       return (
+         $2
+       );
+     }
+    """
+  "if/else (es6) inside html->React":
+    "prefix": "re-if3"
+    "body": """
+     {(() => {
+       if($1) {
+         return(
+           $2
+         );
+       } else {
+         return(
+           $2
+         );
+       }
+     })()}
+    """
+  "switch-case (es6) inside html->React":
+    "prefix": "re-switchcase"
+    "body": """
+     {(() => {
+       switch($1) {
+         case x:
+           return(
+             $2
+           )
+           break
+         case x2:
+           return(
+             $2
+           )
+           break
+         default:
+         return(
+           $2
+         )
+       }
+     })}
+    """
+  "tenary condition->React":
+    "prefix": "re-tenarycondition"
+    "body": """
+     { 2==2$1 ? x$2 : x$2 }
+    """

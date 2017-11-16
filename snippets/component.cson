@@ -1,0 +1,34 @@
+########################################################
+#            Atom React Snippet                        #
+#                Component                            #
+#####################################################
+
+'.source.js':
+
+  "component demo->React jsx":
+    "prefix": "re-component"
+    "body": """
+    import React, { Component } from 'react'
+
+    class MyComponent$1 extends Component {
+      render() {
+        return (
+          <h1> This is MyComponent </h1>
+        );
+      }
+    }
+    export default MyComponent$1
+    """
+  "component 2 demo->React jsx":
+    "prefix": "re-component2"
+    "body": """
+    import React, { Component } from 'react'
+
+    export default class MyComponent$1 extends Component {
+      render() {
+        return (
+          <h1> This is MyComponent </h1>
+        );
+      }
+    }
+    """

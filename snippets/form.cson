@@ -1,0 +1,17 @@
+########################################################
+#            Atom React Snippet                        #
+#                Router                               #
+#####################################################
+
+'.source.js':
+
+  "input value->React":
+    "prefix": "re-f-value"
+    "body": """
+     value: event.target.value
+    """
+  "input onChange ->React":
+    "prefix": "re-f-onchange"
+    "body": """
+     onChange={this.x$1}
+    """

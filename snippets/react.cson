@@ -1,0 +1,72 @@
+########################################################
+#            Atom React Snippet                        #
+#                React                                #
+#####################################################
+
+'.source.js':
+
+  "import react & dom ->React":
+    "prefix": "re-import"
+    "body": """
+    import React from 'react'
+    import ReactDOM from 'react-dom'
+    """
+
+  "ReactDOM.render->React":
+    "prefix": "re-renderd"
+    "body": """
+    ReactDOM.render(
+      <App />,
+      document.getElementById('root')
+    );
+    """
+  "render->React":
+    "prefix": "re-render"
+    "body": """
+    render() {
+      return(
+        $1
+      )
+    }
+    """
+  "constructor ->React":
+    "prefix": "re-constructor"
+    "body": """
+    constructor() {
+      super();
+      this.state = {
+        $1
+      };
+    }
+    """
+  "constructor with props ->React":
+    "prefix": "re-constructorprops"
+    "body": """
+    constructor(props) {
+      super(props);
+      this.state = {
+        $1
+      };
+    }
+    """
+  "state->React":
+    "prefix": "re-state"
+    "body": """
+    this.state = {
+      $1
+    }
+    """
+  "set state+props->React":
+    "prefix": "re-setstate2"
+    "body": """
+    this.setState((prevState, props) => ({
+      $1
+    }));
+    """
+  "set state ->React":
+    "prefix": "re-setstate"
+    "body": """
+    this.setState(
+      $1
+    );
+    """
